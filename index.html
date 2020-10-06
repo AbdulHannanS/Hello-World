@@ -18,16 +18,8 @@
     width="640"
     height="264"
     poster="MY_VIDEO_POSTER.jpg"
-    data-setup="{}"
+    data-setup="{'techOrder': ['youtube'], 'sources': [{ 'type': 'video/youtube', 'src': 'https://youtu.be/FDe9nYJXWco'}]}"
   >
-  <source src="https://youtu.be/FDe9nYJXWco" type="video/mp4" />
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a
-      web browser that
-      <a href="https://videojs.com/html5-video-support/" target="_blank"
-        >supports HTML5 video</a
-      >
-    </p>
   </video>
 
 <script type="text/javascript">
@@ -38,5 +30,6 @@
 }
 </script>
 <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+<script type="text/javascript" src="https://github.com/videojs/videojs-youtube/blob/master/dist/Youtube.min.js"></script>
 </body>
 </html>
