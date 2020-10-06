@@ -3,8 +3,7 @@
 <head>
 	<title>This is to test the reading from json</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet"/>
-	<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
 </head>
 <body>
 	<h2>Convert a string written in JSON format, into a JavaScript object.</h2>
@@ -17,7 +16,7 @@
     preload="auto"
     width="640"
     height="264"
-    poster="MY_VIDEO_POSTER.jpg"
+    poster=""
     data-setup="{'techOrder': ['youtube'], 'sources': [{ 'type': 'video/youtube', 'src': 'https://youtu.be/FDe9nYJXWco'}]}"
   >
   </video>
@@ -29,7 +28,7 @@
     });
 }
 </script>
-<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
-<script type="text/javascript" src="https://github.com/videojs/videojs-youtube/blob/master/dist/Youtube.min.js"></script>
+<script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+<script type="text/javascript" src="Youtube.min.js"></script>
 </body>
 </html>
