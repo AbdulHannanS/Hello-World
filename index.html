@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is to test the reading from json</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<h2>Convert a string written in JSON format, into a JavaScript object.</h2>
+	<p id="demo"></p>
+	<button onclick="readjson()">get the object property values</button>
+
+<script type="text/javascript">
+	function readjson() {
+		
+	}
+	$.getJSON('thejson.json', function(data) {        
+        $(".demo").html(data.name);
+    });
+</script>
+</body>
+</html>
