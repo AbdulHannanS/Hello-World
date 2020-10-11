@@ -11,8 +11,9 @@
 
 <script type="text/javascript">
 	function readjson() {
-	$.getJSON('https://abdulhannans.github.io/Hello-World/thejson.json', function(data) {
+	$.getJSON('https://abdulhannans.github.io/Hello-World/thejson.json', function(data) {        
         data.city="San Francisco";
+        $("#demo").html(data.city);
     });
 }
 </script>
