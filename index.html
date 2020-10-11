@@ -6,13 +6,12 @@
 </head>
 <body>
 	<h2>Convert a string written in JSON format, into a JavaScript object.</h2>
-	<span>the text is here.: </span><p id="demo"></p>
+	<p id="demo"><span>the text is here.: </span></p>
 	<button onclick="readjson()">get the object property values</button>
 
 <script type="text/javascript">
 	function readjson() {
-	$.getJSON('https://abdulhannans.github.io/Hello-World/thejson.json', function(data) {        
-        $("#demo").html(data.city);
+	$.getJSON('https://abdulhannans.github.io/Hello-World/thejson.json', function(data) {
         data.city="San Francisco";
     });
 }
